@@ -1,6 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:responsi/order.dart';
 
+class Listmenu {
+  final String name;
+  final int price;
+
+  const Listmenu({required this.name, required this.price});
+}
+
+List<Listmenu> listmenu = [
+  Listmenu(name: 'Nasi Goreng', price: 15000),
+  Listmenu(name: 'Mie Ayam', price: 12000),
+  Listmenu(name: 'Sate Ayam', price: 20000),
+  Listmenu(name: 'Bakso', price: 10000),
+  Listmenu(name: 'Soto Ayam', price: 13000),
+  Listmenu(name: 'Gado-Gado', price: 14000),
+];
 
 class Menu extends StatelessWidget {
   final String name;
